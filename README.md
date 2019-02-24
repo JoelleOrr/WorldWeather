@@ -7,3 +7,8 @@ The rest is up to you, but you will want to use the API we built for you.
 Try `https://wyn-weather-api.herokuapp.com/cities?query=lo`
 
 Or `https://wyn-weather-api.herokuapp.com/cities/44418`
+
+## Getting Started
+
+* Clone this repo
+* `yarn install && yarn start`
