@@ -10,5 +10,5 @@ Or `https://wyn-weather-api.herokuapp.com/cities/44418`
 
 ## Getting Started
 
-* Clone this repo
+* Clone this repo and `cd` into it
 * `yarn install && yarn start`
