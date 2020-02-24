@@ -7,7 +7,7 @@ const App = () => (
   <BrowserRouter>
     <Switch>
       <Route exact path='/' component={CitySearch} />
-      <Route path='/cities/:id' component={SingleCity} />
+      <Route path='/cities/:id' component={(props) => <SingleCity {...props} />} />
     </Switch>
   </BrowserRouter>
 )
