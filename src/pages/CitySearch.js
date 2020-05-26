@@ -1,11 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-class CitySearch extends Component {
-  render(){
+const CitySearch = () => {
     return(
       <h1>City Search</h1>
     )
   }
-}
 
 export default CitySearch
