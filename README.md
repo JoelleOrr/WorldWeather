@@ -1,12 +1,18 @@
 ## Wyn-Weather APP
 
-This app was boostrapped with Create React App. We added react-router-dom, and configured a BrowserRouter in App.js that has two Routes: CitySearch and SingleCity.
+This app was boostrapped with Create React App. We added react-router-dom, and configured a BrowserRouter in App.js that has two Routes: `CitySearch` and `SingleCity`.
 
-The rest is up to you, but you will want to use the API we built for you.
+The rest is up to you, but you will want to use the two API endpoints we've already built:
 
-Try `https://wyn-weather-api.herokuapp.com/cities?query=lo`
+### City Search API Endpoint (GET)
+ - `https://wyn-weather-api.herokuapp.com/cities`
+ - Takes one GET parameter named `query`
+ - https://wyn-weather-api.herokuapp.com/cities?query=lo
 
-Or `https://wyn-weather-api.herokuapp.com/cities/44418`
+### City Forecast API Endpoint (GET)
+ - `https://wyn-weather-api.herokuapp.com/cities/:id`
+ - `:id` is an city ID
+ - Example: https://wyn-weather-api.herokuapp.com/cities/44418
 
 ## Getting Started
 
@@ -31,15 +37,15 @@ And using `https://wyn-weather-api.herokuapp.com/cities/766273`, try to display 
 
 - Clone this repo, cd into it, yarn install and yarn start
 - Make an issue, check out a branch that has your name in it and references your issue number
-- Check out App.js -- you already have BrowserRouter and 2 Routes that point to existing components--you will be building the App in the two components :D
+- Check out App.js: you already have `BrowserRouter` and two routes that point to existing components. **You will be building the App in the two components.** 😃
 - In CitySearch, create a list of `cities` with the useState hook, which should default to an empty array.
-- Create a function called handleSearch that will call your API and set the list of cities with state.
-- You will need to render the results in this component--try doing this with an input that will trigger handleSearch on submit and map through the results as a list.
-- The list items should have links that point to the SingleCity route / component.
-- Inside of the component SingleCity, you will need to set a default city inside of state. The default city might -- for example -- have default values for its `name` and `forecasts`. Name would be a string and forecasts an array so try setting this state to an empty object.
-- Make an API call via UseEffect that will update the value of the city with state.
+- Create a function called `handleSearch` that will call your API and set the list of cities with state.
+- You will need to render the results in this component -- try doing this with an input that will trigger `handleSearch` on submit and map through the results as a list.
+- The list items should have links that point to the `SingleCity` route and component.
+- Inside `SingleCity`, you will need to set a default city inside of state. The default city might, for example, have default values for the `name` and `forecasts` values. `name` would be a string and `forecasts` an array, so try setting this state to an empty object.
+- Make an API call via useEffect that will update the value of the city with state.
 - You should then render the results to display the upcoming daily forecasts.
-- You should place a link of this page to go back to all cities.
+- You should place a link on this page to go back to all cities.
 
 ## Submitting
 
