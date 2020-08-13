@@ -5,14 +5,16 @@ This app was boostrapped with Create React App. We added react-router-dom, and c
 The rest is up to you, but you will want to use the two API endpoints we've already built:
 
 ### City Search API Endpoint (GET)
- - `https://wyn-weather-api.herokuapp.com/cities`
- - Takes one GET parameter named `query`
- - https://wyn-weather-api.herokuapp.com/cities?query=lo
+
+- `https://wyn-weather-api.herokuapp.com/cities`
+- Takes one GET parameter named `query`
+- https://wyn-weather-api.herokuapp.com/cities?query=lo
 
 ### City Forecast API Endpoint (GET)
- - `https://wyn-weather-api.herokuapp.com/cities/:id`
- - `:id` is an city ID
- - Example: https://wyn-weather-api.herokuapp.com/cities/44418
+
+- `https://wyn-weather-api.herokuapp.com/cities/:id`
+- `:id` is an city ID
+- Example: https://wyn-weather-api.herokuapp.com/cities/44418
 
 ## Getting Started
 
@@ -56,3 +58,39 @@ And using `https://wyn-weather-api.herokuapp.com/cities/766273`, try to display 
 Bonus points for formatting the dates nicely (hint: moment.js), or for allowing the user to change the temps from C to F and back (hint: F = 1.8 \* C + 32).
 
 All of this is just a starting point. Keep working on this throughout the week for additional React practice!
+
+#### Milestone 1
+
+- [ ] Add necessary jsx elements.
+- [ ] Create state variables
+
+#### Milestone 2
+
+- [ ] Add necessary jsx elements.
+- [ ] Create state variables
+- [ ] Implement `handleSearch` function to make request to correct API endpoint
+- [ ] Set response from API to state.
+
+#### Milestone 3
+
+- [ ] Add necessary jsx elements.
+- [ ] Create state variables
+- [ ] Implement `handleSearch` function to make request to correct API endpoint
+- [ ] Set response from API to state.
+- [ ] Render the response as a link.
+- [ ] Link should route to the `SingleCity` component.
+
+#### Milestone 4
+
+- [ ] Add necessary jsx elements.
+- [ ] Create state variables
+- [ ] Implement `handleSearch` function to make request to correct API endpoint
+- [ ] Set response from API to state.
+- [ ] Render the response as a link.
+- [ ] Link should route to the `SingleCity` component.
+- [ ] Grab id from params of url.
+- [ ] Implement `useState` and `useEffect` hooks in `SingleCity` component.
+
+#### Milestone 5
+
+- [ ] Complete all requirements and add CSS for styling.
