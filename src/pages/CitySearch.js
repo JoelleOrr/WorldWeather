@@ -1,5 +1,4 @@
-import React { useState, useEffect } from 'react';
-import axios from 'axios'
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom'; 
 
 const CitySearch = () => {
@@ -21,11 +20,17 @@ const CitySearch = () => {
       <input type="text" onChange={handleSearch}/>
       <ul>
        {cities.map((city) => {
-         return 
+
+         return (
          <li key={city.id}>
            <Link to={`/cities/${city.id}`}>{city.name}</Link>
-           </li>;
+           </li>
+         );
+          
          })}
+
+         
+         </ul>  
          </div>
     );
   };
