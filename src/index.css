@@ -2,3 +2,11 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.forecasts {
+  display: grid;
+  grid-template-columns; repeat(6, 1fr);
+  width: 200px;
+  border: 1px solid black;
+}
+
