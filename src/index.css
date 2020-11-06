@@ -1,12 +1,40 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+#root {
+  display: grid;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.buttonArea {
+  padding: 20px;
 }
 
 .forecasts {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  width: 200px;
   border: 1px solid black;
+}
+
+.forecast {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+ul li {
+  text-decoration: none;
+}
+
+.button {
+  padding: 10px;
+  font-weight: 900;
+  font-family: 'Poppins', sans-serif;
 }
 

@@ -15,7 +15,7 @@ const CitySearch = () => {
 
 
     return(
-      <div>
+      <div className="cityList">
       <h1>City Search</h1>
       <input type="text" onChange={handleSearch}/>
       <ul>
